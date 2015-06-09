@@ -20,10 +20,20 @@ class MyCar
             @current_speed = 0
             puts"it's off."
       end
+      def spray_paint(color)
+            self.color=color
+            puts "it's #{color} now!"
+
+      end
 end
+
+
+
+
+
 
 nissan = MyCar.new(2011, "Teana", "black")
 nissan.color = "red"
-
+nissan.spray_paint("yellow")
 puts nissan.color
 puts nissan.year
